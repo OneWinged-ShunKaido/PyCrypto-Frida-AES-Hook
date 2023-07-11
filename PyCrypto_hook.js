@@ -4,7 +4,7 @@ Usage: frida -p <pid> -l PyCrypto_hook.js
 Hook <AESNI_start_operation> from <_raw_aesni.pyd> to get the key
 Hook mode_encrypt or mode_decrypt from _raw_mode.pyd to get the message content
 Hook mode_start_operation to get iv
-For example, hook <CBC_decrypt> from <_raw_cbc_mode.pyd> if CBC mode is used in the Python code
+For example, hook <CBC_decrypt> from <_raw_cbc.pyd> if CBC mode is used in the Python code
 
 References:
 - https://github.com/Legrandin/pycryptodome/blob/master/src/AESNI.c#L382
