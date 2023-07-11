@@ -66,7 +66,7 @@ function formatSpec(arg, argLen) {
   const argBytesArray = formattedArray.byteArray;
   //    var argString =  Memory.readCString(arg);
   for (var i = 0; i < argBytesArray.length; i++) {
-    var byte = argBytesArray[i]
+    var byte = argBytesArray[i];
     if (byte < 32 || byte > 126) {
         isAscii = false;
     }
